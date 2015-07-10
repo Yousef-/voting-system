@@ -7,6 +7,8 @@ public class Voting_model {
 	
 	ArrayList<String> candidate = new ArrayList<String>();
 	
+	Voters voter;
+	
 	/**
 	 * the model contains all the candidates for the vote<br>
 	 */
