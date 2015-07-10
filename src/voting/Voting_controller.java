@@ -7,7 +7,6 @@ public class Voting_controller{
 	
 	public Voting_controller()
 	{
-		
 	}
 
 	public Object getResults() {

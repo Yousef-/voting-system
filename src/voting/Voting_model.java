@@ -28,15 +28,27 @@ public class Voting_model {
 		this.candidate.add(can);
 	}
 	
+	/**
+	 * 
+	 * @return
+	 */
 	public ArrayList<String> getCans()
 	{
 		return this.candidate;
 	}
+	
+	/**
+	 * 
+	 * @return
+	 */
 	public int getCandidates()
 	{
 		return this.candidate.size();
 	}
 	
+	/**
+	 * 
+	 */
 	private void setCans()
 	{
 		this.candidate.add("jon");

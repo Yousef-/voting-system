@@ -16,6 +16,10 @@ public class Voters extends Voting_model{
 		setVoters(voters);
 	}
 	
+	/**
+	 * 
+	 * @param voters
+	 */
 	public void setVoters(int voters)
 	{
 		
@@ -39,6 +43,11 @@ public class Voters extends Voting_model{
 			this.voter.get(i).addAll(candidates);
 		}
 	}
+	
+	/**
+	 * 
+	 * @return
+	 */
 	public ArrayList<ArrayList<Integer>> getVoters()
 	{
 		return this.voter;
