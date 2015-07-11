@@ -39,6 +39,10 @@ public class VotingView{
 		{
 			votersNumber();
 		}
+		if(i == 0)
+		{
+			votersNumber();
+		}
 		return i;
 	}
 
