@@ -26,14 +26,20 @@ public class VotingView{
 	}
 	
 	/**
-	 * 
-	 * @return
+	 * @return 
 	 */
-	private int votersNumber()
+	public int votersNumber()
 	{
+		int i = 0;
 		JFrame frame = new JFrame("Input");
 		String vs = JOptionPane.showInputDialog(frame, "set the number of voters");
-		return Integer.parseInt(vs);
+		try{
+			i = Integer.parseInt(vs);
+		}catch (NumberFormatException e)
+		{
+			votersNumber();
+		}
+		return i;
 	}
 
 	/**

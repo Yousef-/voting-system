@@ -14,12 +14,10 @@ public class VotingController{
 	ArrayList<ArrayList<Integer>> voter = new ArrayList<ArrayList<Integer>>();
 	ArrayList<Integer> candidates = new ArrayList<Integer>();
 	
-	
-	public VotingController()
+	public void askForNumber()
 	{
+		setVoters(this.vv.votersNumber());
 	}
-	
-	
 	
 	
 	/**
@@ -64,19 +62,13 @@ public class VotingController{
 		return null;
 	}
 
-	public void setVotersNumber(int votersNumber) {
-		// TODO Auto-generated method stub
-		
-	}
 
 	public void setModel(VotingModel vm) {
-		// TODO Auto-generated method stub
-		
+		this.vm = vm;
 	}
 
-	public void setView(VotingView vv2) {
-		// TODO Auto-generated method stub
-		
+	public void setView(VotingView vv) {
+		this.vv = vv;
 	}
 
 	
