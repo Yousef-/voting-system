@@ -2,7 +2,7 @@ package voting;
 
 import java.util.ArrayList;
 
-public class Voting_model {
+public class VotingModel {
 	
 	
 	ArrayList<String> candidate = new ArrayList<String>();
@@ -11,7 +11,7 @@ public class Voting_model {
 	/**
 	 * the model contains all the candidates for the vote<br>
 	 */
-	public Voting_model()
+	public VotingModel()
 	{
 		this.candidate = new ArrayList<String>();
 		setCans();
@@ -31,7 +31,7 @@ public class Voting_model {
 	 * 
 	 * @return
 	 */
-	public ArrayList<String> getCans()
+	public ArrayList<String> getCandidates()
 	{
 		return this.candidate;
 	}
@@ -40,7 +40,7 @@ public class Voting_model {
 	 * 
 	 * @return
 	 */
-	public int getCandidates()
+	public int getNumberOfCandidates()
 	{
 		return this.candidate.size();
 	}

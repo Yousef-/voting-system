@@ -2,8 +2,8 @@ package voting;
 
 import javax.swing.*;
 
-public class Voting_view{
-	Voting_model vm;
+public class VotingView{
+	VotingModel vm;
 	
 	JFrame results = new JFrame("results");
 	
@@ -12,7 +12,7 @@ public class Voting_view{
 	/**
 	 * 
 	 */
-	public Voting_view()
+	public VotingView()
 	{
 		setUpGUI();
 	}
@@ -40,7 +40,7 @@ public class Voting_view{
 	 * 
 	 * @param vm2
 	 */
-	public void setModel(Voting_model vm2) {
+	public void setModel(VotingModel vm2) {
 		// TODO Auto-generated method stub
 		
 	}

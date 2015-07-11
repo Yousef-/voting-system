@@ -3,20 +3,22 @@ package voting;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Voting_controller{
+public class VotingController{
 	
-	Voting_view			vv;
-	Voting_model		vm;
+	VotingView		vv;
+	VotingModel		vm;
 	
-	public Voting_controller()
-	{
-	}
-
 	
-Random rand = new Random();
+	Random rand = new Random();
 	
 	ArrayList<ArrayList<Integer>> voter = new ArrayList<ArrayList<Integer>>();
 	ArrayList<Integer> candidates = new ArrayList<Integer>();
+	
+	
+	public VotingController()
+	{
+	}
+	
 	
 	
 	
@@ -27,7 +29,7 @@ Random rand = new Random();
 	public void setVoters(int voters)
 	{
 		
-		final int cans = this.vm.getCandidates();
+		final int cans = this.vm.getNumberOfCandidates();
 		boolean loop = true;
 		int temp = 0;
 		
@@ -67,12 +69,12 @@ Random rand = new Random();
 		
 	}
 
-	public void setModel(Voting_model vm) {
+	public void setModel(VotingModel vm) {
 		// TODO Auto-generated method stub
 		
 	}
 
-	public void setView(Voting_view vv2) {
+	public void setView(VotingView vv2) {
 		// TODO Auto-generated method stub
 		
 	}
